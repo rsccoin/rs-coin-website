@@ -5,6 +5,127 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Official RS Coin (RSC) project website. Explore token information, development progress, and project updates.">
   <title>RS Coin (RSC) | Official Website</title>
+/* RSC animated hero banner */
+.rsc-hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 320px;
+  padding: 36px 24px;
+  border-radius: 18px;
+  background: linear-gradient(120deg, #061326, #12385a, #071426);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  isolation: isolate;
+}
+
+.rsc-hero h1 {
+  color: #f3d17a;
+  font-size: clamp(32px, 6vw, 58px);
+  margin: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.rsc-hero p {
+  color: #d2e4f6;
+  position: relative;
+  z-index: 2;
+}
+
+.rsc-coin {
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 145px;
+  height: 145px;
+  border: 5px solid #f4d17c;
+  border-radius: 50%;
+  background: radial-gradient(circle, #234e7c, #101d35 72%);
+  box-shadow: 0 0 28px #e7bd6244, inset 0 0 18px #f3d17a44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: rsc-float 3s ease-in-out infinite;
+  z-index: 1;
+}
+
+.rsc-coin strong {
+  color: #f6d783;
+  font-size: 38px;
+}
+
+.rsc-coin span {
+  color: white;
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.rsc-chart {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  opacity: .45;
+  z-index: 0;
+}
+
+.rsc-candle {
+  width: 9px;
+  height: var(--h);
+  background: var(--c);
+  position: relative;
+  animation: rsc-pulse 1.4s ease-in-out infinite alternate;
+  animation-delay: var(--d);
+}
+
+.rsc-candle::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 140%;
+  background: var(--c);
+  left: 3px;
+  top: -20%;
+}
+
+@keyframes rsc-pulse {
+  from { transform: scaleY(.65); }
+  to { transform: scaleY(1); }
+}
+
+@keyframes rsc-float {
+  0%, 100% { margin-top: 0; }
+  50% { margin-top: -10px; }
+}
+
+@media (max-width: 600px) {
+  .rsc-hero {
+    min-height: 290px;
+    padding: 28px 18px;
+  }
+  .rsc-coin {
+    width: 95px;
+    height: 95px;
+    right: 6%;
+    top: 68%;
+  }
+  .rsc-coin strong {
+    font-size: 26px;
+  }
+  .rsc-hero h1 {
+    max-width: 75%;
+  }
+}
+
 
   <style>
     * { box-sizing: border-box; }
