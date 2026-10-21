@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Official RS Coin (RSC) project website. Explore token information, development progress, and project updates.">
   <title>RS Coin (RSC) | Official Website</title>
+
   <style>
     * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -13,78 +18,307 @@
       color: #f4f7ff;
       line-height: 1.7;
     }
-    header, section, footer { padding: 25px 7%; }
-    header { background: #121a30; border-bottom: 1px solid #293451; }
-    .brand { color: #71e0c0; font-size: 26px; font-weight: bold; }
-    nav a { color: white; margin-right: 16px; }
-    .hero { text-align: center; padding: 65px 7%; }
-    .hero h1 { font-size: 48px; }
+
+    header, section, footer {
+      padding: 25px 7%;
+    }
+
+    header {
+      background: #121a30;
+      border-bottom: 1px solid #293451;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 23px;
+      font-weight: bold;
+      color: #71e0c0;
+    }
+
+    .coin-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #fff0a6, #d9a62b, #fff0a6);
+      border: 3px solid #b88720;
+      box-shadow: 0 0 12px #d9a62b55;
+      color: #173e9b;
+      font-size: 14px;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover { color: #71e0c0; }
+
+    .hero {
+      text-align: center;
+      padding: 75px 7%;
+      background: radial-gradient(ellipse at top, #1c2d50, #0b1020 70%);
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.2;
+    }
+
     .hero h1 span, h2 { color: #71e0c0; }
-    .hero p { max-width: 700px; margin: auto; }
-    .notice { color: #ffe29a; }
+
+    .hero p {
+      max-width: 720px;
+      margin: 16px auto;
+    }
+
+    .notice {
+      color: #ffe29a;
+      font-weight: bold;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 18px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      background: #71e0c0;
+      color: #0b1020;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     .cards {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
       gap: 16px;
     }
+
     .card {
       background: #121a30;
       border: 1px solid #293451;
       border-radius: 12px;
       padding: 20px;
+      overflow-wrap: anywhere;
     }
-    footer { border-top: 1px solid #293451; color: #c1cbe0; }
+
+    .card h3 { color: #71e0c0; }
+
+    a { color: #71e0c0; }
+
+    .contract {
+      font-size: 14px;
+      word-break: break-all;
+    }
+
+    .disclaimer {
+      color: #c1cbe0;
+      font-size: 14px;
+    }
+
+    footer {
+      border-top: 1px solid #293451;
+      color: #c1cbe0;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header { align-items: flex-start; }
+      .brand { font-size: 19px; }
+      nav { gap: 12px; }
+    }
   </style>
 </head>
+
 <body>
   <header>
-    <div class="brand">◆ RS COIN (RSC)</div>
-    <nav>
+    <div class="brand">
+      <div class="coin-logo" aria-label="RSC coin logo">RSC</div>
+      <span>RS COIN</span>
+    </div>
+
+    <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#token">Token Information</a>
+      <a href="#contract">Contract</a>
       <a href="#roadmap">Roadmap</a>
     </nav>
   </header>
 
-  
+  <main>
     <div class="hero">
-      <p class="notice">Testnet stage — Mainnet not yet launched</p>
+      <p class="notice">TESTNET STAGE — MAINNET NOT YET LAUNCHED</p>
       <h1>Introducing <span>RS Coin</span></h1>
-      <p>A community-focused crypto project built around transparency and responsible development.</p>
+      <p>
+        RSC is an early-stage digital token project focused on
+        transparent information, responsible development, and security.
+      </p>
+      <a class="button" href="#token">Explore RSC</a>
     </div>
 
     <section id="about">
       <h2>About RS Coin</h2>
-      <p>RS Coin (RSC) is an early-stage project focused on transparent information, careful development, and security.</p>
+      <p>
+        RS Coin (RSC) is an early-stage token project currently deployed
+        on BNB Smart Chain Testnet. This website shares project information
+        and development progress.
+      </p>
+      <p>
+        The project is not yet launched on Mainnet. No market price,
+        exchange listing, or financial return is promised.
+      </p>
     </section>
 
     <section id="token">
       <h2>Token Information</h2>
+
       <div class="cards">
-        <div class="card"><h3>Token Name</h3><p>RS Coin</p></div>
-        <div class="card"><h3>Symbol</h3><p>RSC</p></div>
-        <div class="card"><h3>Testnet Supply</h3><p>1,000,000,000 RSC</p></div>
-        <div class="card"><h3>Network</h3><p>BNB Smart Chain Testnet</p></div>
+        <div class="card">
+          <h3>Token Name</h3>
+          <p>RS Coin</p>
+        </div>
+
+        <div class="card">
+          <h3>Symbol</h3>
+          <p>RSC</p>
+        </div>
+
+        <div class="card">
+          <h3>Testnet Supply</h3>
+          <p>1,000,000,000 RSC</p>
+        </div>
+
+        <div class="card">
+          <h3>Network</h3>
+          <p>BNB Smart Chain Testnet</p>
+        </div>
       </div>
-      <p><strong>Important:</strong> The current testnet token has no real market value and is not available for public trading.</p>
+
+      <p class="disclaimer">
+        The current token is on Testnet and has no established real-market
+        value. It is not currently available for public trading.
+      </p>
     </section>
-<div class="card">
-  <h3>Contract Address</h3>
- <p><a href="https://testnet.bscscan.com/address/0xbec393619ac58aa107bd7316e19d9547f5bd5da7" target="_blank" rel="noopener noreferrer">0xbec393619ac58aa107bd7316e19d9547f5bd5da7</a></p>  
-</div>
+
+    <section id="contract">
+      <h2>Contract Information</h2>
+
+      <div class="card">
+        <h3>RSC Testnet Contract Address</h3>
+
+        <p class="contract">
+          <a
+            href="https://testnet.bscscan.com/address/0xbec393619ac58aa107bd7316e19d9547f5bd5da7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >0xbec393619ac58aa107bd7316e19d9547f5bd5da7</a>
+        </p>
+
+        <p class="disclaimer">
+          This address is for the Testnet token only.
+          Do not use it as a Mainnet token address.
+        </p>
+      </div>
+    </section>
+
+    <section id="buy">
+      <h2>Future Buying Options</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>BNB</h3>
+          <p>
+            BNB-based RSC trading may be explored after Mainnet launch,
+            security checks, and liquidity arrangements.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>USDT</h3>
+          <p>
+            USDT-based RSC trading may be explored if the required
+            trading pair and liquidity are available.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>INR / UPI</h3>
+          <p>
+            Direct purchase using Indian Rupees through UPI is under
+            consideration and is not currently available on this website.
+          </p>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        These are future possibilities, not active buying or selling services.
+        No payment should be sent through this website at this stage.
+      </p>
+    </section>
+
     <section id="roadmap">
       <h2>Development Roadmap</h2>
+
       <div class="cards">
-        <div class="card"><h3>01 — Test</h3><p>Basic token transfers tested on testnet.</p></div>
-        <div class="card"><h3>02 — Documentation</h3><p>Prepare project documentation and token design.</p></div>
-        <div class="card"><h3>03 — Security</h3><p>Review code, legal requirements, and costs before mainnet deployment.</p></div>
+        <div class="card">
+          <h3>01 — Testnet</h3>
+          <p>
+            Test token deployment and basic transfers.
+            Initial testing has been completed.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>02 — Documentation</h3>
+          <p>
+            Improve project documentation, token information,
+            website content, and transparency.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>03 — Security & Compliance</h3>
+          <p>
+            Review contract security, applicable legal requirements,
+            and deployment costs before considering Mainnet.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>04 — Future Trading</h3>
+          <p>
+            Explore suitable BNB, USDT, and other purchase options
+            only after necessary checks and arrangements.
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <p>© 2026 RS Coin Project</p>
-    <p>This website is for project information only. No returns or exchange listings are guaranteed.</p>
+    <p class="disclaimer">
+      This website provides project information only.
+      It is not an offer or guarantee of investment returns.
+      Mainnet launch and exchange availability are not guaranteed.
+    </p>
   </footer>
 </body>
 </html>
