@@ -11,86 +11,7 @@
 
 
   <style>
-    /* RSC Premium Gold Upgrade */
-.rsc-hero {
-  background:
-    radial-gradient(ellipse at 78% 45%, rgba(212, 165, 55, 0.18), transparent 35%),
-    radial-gradient(ellipse at 15% 15%, rgba(35, 112, 190, 0.22), transparent 45%),
-    linear-gradient(125deg, #030914 0%, #091b32 52%, #06101e 100%);
-  border: 1px solid rgba(224, 185, 92, 0.35);
-  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
-}
-
-.rsc-hero h1 {
-  color: #fff8e7;
-  letter-spacing: 0.12em;
-  text-shadow: 0 0 22px rgba(238, 193, 85, 0.22);
-}
-
-.rsc-hero p {
-  color: #d5dfef;
-}
-
-.rsc-coin {
-  background:
-    radial-gradient(circle at 32% 25%, #fff4c2 0%, #f5d778 13%, #c38a21 38%, #8c5b12 68%, #f1cc68 82%, #6f470e 100%);
-  border: 3px solid #f7dc8b;
-  box-shadow:
-    0 0 0 5px rgba(220, 171, 62, 0.12),
-    0 0 28px rgba(235, 183, 65, 0.32),
-    inset 0 0 0 3px rgba(91, 56, 8, 0.42),
-    inset 0 0 18px rgba(255, 244, 195, 0.45);
-  animation: rscGoldFloat 5s ease-in-out infinite;
-}
-
-.rsc-coin strong {
-  color: #fff9df;
-  text-shadow:
-    0 2px 1px #79500e,
-    0 0 12px rgba(255, 255, 220, 0.35);
-  letter-spacing: 0.04em;
-}
-
-.rsc-coin span {
-  color: #fff0b5;
-  letter-spacing: 0.18em;
-  text-shadow: 0 1px 2px #593a08;
-}
-
-.rsc-candle {
-  opacity: 0.95;
-  transform-origin: center bottom;
-  animation: rscCandleMove 4s ease-in-out infinite;
-  animation-delay: var(--d, 0s);
-  filter: drop-shadow(0 0 4px var(--c));
-}
-
-@keyframes rscGoldFloat {
-  0%, 100% {
-    transform: translateY(0) rotateY(-5deg);
-  }
-  50% {
-    transform: translateY(-8px) rotateY(5deg);
-  }
-}
-
-@keyframes rscCandleMove {
-  0%, 100% {
-    opacity: 0.82;
-    scale: 1 0.96;
-  }
-  50% {
-    opacity: 1;
-    scale: 1 1.04;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .rsc-coin,
-  .rsc-candle {
-    animation: none;
-  }
-}
+ 
     /* RSC animated hero banner */
 .rsc-hero {
   position: relative;
@@ -348,6 +269,86 @@
       .brand { font-size: 19px; }
       nav { gap: 12px; }
     }
+      /* RSC Premium Gold Upgrade */
+.rsc-hero {
+  background:
+    radial-gradient(ellipse at 78% 45%, rgba(212, 165, 55, 0.18), transparent 35%),
+    radial-gradient(ellipse at 15% 15%, rgba(35, 112, 190, 0.22), transparent 45%),
+    linear-gradient(125deg, #030914 0%, #091b32 52%, #06101e 100%);
+  border: 1px solid rgba(224, 185, 92, 0.35);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.35);
+}
+
+.rsc-hero h1 {
+  color: #fff8e7;
+  letter-spacing: 0.12em;
+  text-shadow: 0 0 22px rgba(238, 193, 85, 0.22);
+}
+
+.rsc-hero p {
+  color: #d5dfef;
+}
+
+.rsc-coin {
+  background:
+    radial-gradient(circle at 32% 25%, #fff4c2 0%, #f5d778 13%, #c38a21 38%, #8c5b12 68%, #f1cc68 82%, #6f470e 100%);
+  border: 3px solid #f7dc8b;
+  box-shadow:
+    0 0 0 5px rgba(220, 171, 62, 0.12),
+    0 0 28px rgba(235, 183, 65, 0.32),
+    inset 0 0 0 3px rgba(91, 56, 8, 0.42),
+    inset 0 0 18px rgba(255, 244, 195, 0.45);
+  animation: rscGoldFloat 5s ease-in-out infinite;
+}
+
+.rsc-coin strong {
+  color: #fff9df;
+  text-shadow:
+    0 2px 1px #79500e,
+    0 0 12px rgba(255, 255, 220, 0.35);
+  letter-spacing: 0.04em;
+}
+
+.rsc-coin span {
+  color: #fff0b5;
+  letter-spacing: 0.18em;
+  text-shadow: 0 1px 2px #593a08;
+}
+
+.rsc-candle {
+  opacity: 0.95;
+  transform-origin: center bottom;
+  animation: rscCandleMove 4s ease-in-out infinite;
+  animation-delay: var(--d, 0s);
+  filter: drop-shadow(0 0 4px var(--c));
+}
+
+@keyframes rscGoldFloat {
+  0%, 100% {
+    transform: translateY(0) rotateY(-5deg);
+  }
+  50% {
+    transform: translateY(-8px) rotateY(5deg);
+  }
+}
+
+@keyframes rscCandleMove {
+  0%, 100% {
+    opacity: 0.82;
+    scale: 1 0.96;
+  }
+  50% {
+    opacity: 1;
+    scale: 1 1.04;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rsc-coin,
+  .rsc-candle {
+    animation: none;
+  }
+} 
   </style>
 </head>
 
