@@ -230,7 +230,11 @@
             rel="noopener noreferrer"
           >0xbec393619ac58aa107bd7316e19d9547f5bd5da7</a>
         </p>
-
+<button
+  type="button"
+  onclick="navigator.clipboard.writeText('0xbec393619ac58aa107bd7316e19d9547f5bd5da7').then(() => { this.textContent = 'Copied!'; }).catch(() => alert('Please copy the address manually.'))"
+  style="padding:10px 16px;border:0;border-radius:8px;background:#71e0c0;color:#0b1020;font-weight:bold;cursor:pointer;"
+>Copy Contract Address</button>
         <p class="disclaimer">
           This address is for the Testnet token only.
           Do not use it as a Mainnet token address.
